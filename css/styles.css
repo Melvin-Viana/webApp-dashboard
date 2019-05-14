@@ -46,17 +46,21 @@ grid-area:main;
     top: -21px;
   }
 /* Header */
+
+.main-nav{
+padding:5px 10px;
+}
 .title{
   color:#fff;
   font-family: 'Righteous', cursive;
   text-shadow: 0px 0px 3px #0B132B;
   font-weight: 200;
+  margin:0 !important;
 }
 .user-links{
   display:flex;
   align-items: center;
   justify-content: center;
-  padding-bottom:10px;
 }
 .user-links .icon{
   border-right:1px solid #1C2541;
@@ -89,5 +93,11 @@ grid-area:main;
 @media(min-width:512px){
   .container{
     top: 0px;
+  }
+
+  .main-nav{
+    align-items: center;
+    display: flex;
+  justify-content: space-between;
   }
 }
