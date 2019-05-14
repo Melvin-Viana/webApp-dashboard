@@ -8,6 +8,11 @@ html {
   box-sizing: inherit;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /* General CSS */
 .icon{
   overflow: visible
@@ -36,6 +41,7 @@ grid-area:main;
   /* GRID CSS */
   .container{
     display:grid;
+    margin:0 auto;
     grid-template-areas:"header header" "sidebar main" "sidebar main";
     grid-template-columns:100px,auto;
   }
