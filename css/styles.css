@@ -44,6 +44,9 @@ grid-area:main;
     margin:0 auto;
     grid-template-areas:"header header" "sidebar main" "sidebar main";
     grid-template-columns:100px,auto;
+    vertical-align: top;
+    position: relative;
+top: -21px;
   }
 /* Header */
 .user-links{
