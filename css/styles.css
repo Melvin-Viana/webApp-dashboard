@@ -22,7 +22,6 @@ html {
 
 header{
   background:#3A506B;
-  color:#fff;
   grid-area:header;
   grid-row-start:1;
   grid-row-end:-1;
@@ -49,6 +48,12 @@ grid-area:main;
 top: -21px;
   }
 /* Header */
+.title{
+  color:#fff;
+  font-family: 'Righteous', cursive;
+  text-shadow: 0px 0px 3px #0B132B;
+  font-weight: 200;
+}
 .user-links{
   display:flex;
   align-items: center;
@@ -65,6 +70,12 @@ top: -21px;
   height:auto;
   width:30px;
 }
+
+.user--name{  
+  font-family: 'Poiret One', cursive;
+  color:#5BC0BE;
+}
+
 
 
 /* Media Queries */
