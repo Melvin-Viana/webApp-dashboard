@@ -10,15 +10,14 @@ html {
 
 /* General CSS */
 .icon{
-  width:25px;
-  height:25px;
   overflow: visible
 }
 
 /* Layout */
 
 header{
-  background:#f0932b;
+  background:#3A506B;
+  color:#fff;
   text-align:center;
 }
   /* GRID CSS */
@@ -27,6 +26,12 @@ header{
   display:flex;
   align-items: center;
   justify-content: center;
+}
+.user-links .icon{
+  border-right:1px solid #1C2541;
+  width:50px;
+  height:25px;
+  margin-right:10px;
 }
 .user--image{
   border-radius:50%;
