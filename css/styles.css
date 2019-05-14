@@ -18,9 +18,27 @@ html {
 header{
   background:#3A506B;
   color:#fff;
+  grid-area:header;
+  grid-row-start:1;
+  grid-row-end:-1;
   text-align:center;
 }
+
+#sidebar{
+grid-area:sidebar;
+}
+
+main{
+grid-area:main;
+}
+
+
   /* GRID CSS */
+  .container{
+    display:grid;
+    grid-template-areas:"header header" "sidebar main" "sidebar main";
+    grid-template-columns:100px,auto;
+  }
 /* Header */
 .user-links{
   display:flex;
@@ -46,5 +64,5 @@ header{
 }
 
 @media (min-width:768px){
-  
+
 }
