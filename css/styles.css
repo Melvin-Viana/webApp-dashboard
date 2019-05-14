@@ -9,8 +9,30 @@ html {
 }
 
 /* General CSS */
+.icon{
+  width:25px;
+  height:25px;
+  overflow: visible
+}
 
-/* GRID CSS */
+/* Layout */
+
+header{
+  background:#f0932b;
+  text-align:center;
+}
+  /* GRID CSS */
+/* Header */
+.user-links{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.user--image{
+  border-radius:50%;
+  height:auto;
+  width:30px;
+}
 
 
 /* Media Queries */
