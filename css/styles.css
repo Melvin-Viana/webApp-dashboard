@@ -17,7 +17,10 @@ html {
 .icon{
   overflow: visible
 }
-
+.d-flex{
+  display:flex;
+  align-items: center;
+}
 /* Layout */
 
 header{
@@ -30,6 +33,8 @@ header{
 
 #sidebar{
 grid-area:sidebar;
+grid-row-start:2;
+grid-row-end:-1;
 }
 
 main{
@@ -41,10 +46,13 @@ grid-area:main;
   .container{
     display:grid;
     margin:0 auto;
+    width: 100vw;
+    height: 100vh;
     grid-template-areas:
-    "header header" 
-    "sidebar main" 
+    "header header"
+    "sidebar main"
     "sidebar main";
+    grid-template-rows:130px auto; 
     position: relative;
     top: -21px;
   }
@@ -66,6 +74,7 @@ padding:5px 10px;
 }
 .user-links .icon{
   border-right:1px solid #1C2541;
+  color:#fff;
   width:50px;
   height:25px;
   margin-right:10px;
@@ -85,11 +94,27 @@ padding:5px 10px;
 /* Sidebar */
 #sidebar{
   width:40px;
-  z-index:-1;
-  height:100vh;
   background:#0B132B;
+  flex-direction: column;
+}
+.sidebar-icons{
+  width:25px;
+  height:25px;
+}
+.active-icon{
+  width:40px;
+  color:#fff;
+  border-left:1px solid #5BC0BE;
 }
 
+#sidebar svg:first-child{
+  margin-top:25px;
+  }
+#sidebar svg:not(:first-child){
+  margin-top:30px;
+  color:#3A506B;
+
+}
 /* Media Queries */
 @media (min-width:1024px){
 
@@ -102,6 +127,7 @@ padding:5px 10px;
 @media(min-width:512px){
   .container{
     top: 0px;
+    grid-template-rows:50px auto !important; 
   }
 
   .main-nav{
