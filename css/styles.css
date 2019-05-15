@@ -65,6 +65,12 @@ grid-area:main;
     position: relative;
     top: -21px;
   }
+
+    /* Main Content */
+    .main-content-wrapper{
+    max-width: 1200px;
+    margin:0 auto;
+    }
 /* Header */
 
 .main-nav{
