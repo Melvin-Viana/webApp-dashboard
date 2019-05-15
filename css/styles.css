@@ -29,45 +29,7 @@ body{
   z-index:1;
   background:#fff;
 }
-/* 
-=======================
-        Animations 
-=======================*/
-@keyframes wiggle{
-  0%{
-    transform:rotate(10deg);
-  }
-  10%{
-    transform:rotate(20deg);
-  }
-  20%{
-    transform:rotate(30deg);
-  }
-  30%{
-    transform:rotate(20deg);
-  }
-  40%{
-    transform:rotate(10deg);
-  }
-  50%{
-    transform:rotate(0deg);
-  }
-  60%{
-    transform:rotate(-10deg);
-  }
-  70%{
-    transform:rotate(-20deg);
-  }
-  80%{
-    transform:rotate(-30deg);
-  }
-  90%{
-    transform:rotate(-20deg);
-  }
-  100%{
-    transform:rotate(-10deg);
-  }
-}
+
 
 /* Layout */
 
@@ -236,9 +198,10 @@ border:#ccc 1px solid;
 }
 .bell-icon{
   transform-origin:50% 50%;
+  transition:color ease-out .2s;
 }
 .bell:hover .bell-icon{
-  transform:rotate(10deg);
+  color:var(--highlight-color);
 }
 
 /* Media Queries */
