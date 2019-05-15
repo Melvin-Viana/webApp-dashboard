@@ -76,7 +76,8 @@ padding:5px 10px;
   border-right:1px solid #1C2541;
   color:#fff;
   width:50px;
-  height:25px;
+  height:35px;
+  padding-right:25px;
   margin-right:10px;
 }
 .user--image{
@@ -93,7 +94,7 @@ padding:5px 10px;
 
 /* Sidebar */
 #sidebar{
-  width:40px;
+  width:70px;
   background:#0B132B;
   flex-direction: column;
 }
@@ -102,9 +103,7 @@ padding:5px 10px;
   height:25px;
 }
 .active-icon{
-  width:40px;
   color:#fff;
-  border-left:1px solid #5BC0BE;
 }
 
 #sidebar svg:first-child{
@@ -127,13 +126,14 @@ padding:5px 10px;
 @media(min-width:512px){
   .container{
     top: 0px;
-    grid-template-rows:50px auto !important; 
+    grid-template-rows:75px auto !important; 
   }
 
   .main-nav{
     align-items: center;
     display: flex;
   justify-content: space-between;
+  padding-top:20px;
   }
 
   .title{
