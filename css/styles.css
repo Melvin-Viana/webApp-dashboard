@@ -176,7 +176,13 @@ border:#ccc 1px solid;
 }
 .cancel{
   cursor:pointer;
+  color:#fff;
   margin-right:.5em;
+  fill:currentColor;
+  transition:color ease-out .2s;
+}
+.cancel:hover{
+  color:#000;
 }
 
 /* Media Queries */
