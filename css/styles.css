@@ -159,6 +159,26 @@ border:#ccc 1px solid;
   font-size:11px;
   padding-left:10px;
 }
+
+/* Demo Alert CSS */
+
+.alert{
+  background:var(--highlight-color);
+  color:#fff;
+  border-radius:5px;
+  justify-content: space-between;
+  margin:0 auto;
+  padding:9px 5px;
+  width:95%;
+}
+.alert p:not(b){
+  font-size:.70em;
+}
+.cancel{
+  cursor:pointer;
+  margin-right:.5em;
+}
+
 /* Media Queries */
 @media (min-width:1024px){
 
