@@ -2,11 +2,11 @@
  const lineChartConfig ={
     type: 'line',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['1', '2', '3', '4', '5', '6'],
         datasets: [{
-            data: [500, 750, 1000, 1000, 2000, 2100],
+            data: [500, 750, 1000, 900, 700, 1150],
             pointBackgroundColor: "#fff",
-            borderWidth: 1,
+            borderWidth: 3,
             lineTension: 0
         }],
     },
@@ -14,8 +14,8 @@
         scales: {
             yAxes: [{
                 ticks: {
-                    max: 2500,
-                    stepSize: 500
+                    max: 1200,
+                    stepSize: 100
                 }
             }]
         },
