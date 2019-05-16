@@ -187,8 +187,8 @@ main {
 /* Demo Alert CSS */
 
 .alert {
-  background: var(--highlight-color);
-  background: #5bc0be;
+  background: var(--main-bg-color);
+  background: #3a506b;
   color: #fff;
   border-radius: 5px;
   justify-content: space-between;
@@ -225,22 +225,26 @@ main {
 /* Chart styles */
 .chart-container {
   width: 95%;
-  max-width:900px;
+  max-width:600px;
   margin: 25px auto 0 auto;
+}
+.chart-container h4{
+  color:#1c2541;
+  font-size:1.2em;
 }
 #lineChart{
   width:100%!important;
   height:auto;
-  max-width:8000px;
-  margin:0 auto;
+
 }
 .lineChart-labels{
   justify-content: space-between;
+  padding-bottom:30px;
 }
 .time-options{
   list-style-type:none;
 }
-.time-options li{
+.time-options li:not(:last-child){
   margin-right:1.5em;
 }
 .active{
