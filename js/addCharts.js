@@ -1,5 +1,7 @@
- let lineChart = document.getElementById('lineChart').getContext('2d');
+let lineChart = document.getElementById('lineChart').getContext('2d');
+let barChart = document.getElementById('barChart').getContext('2d');
 
+// Line Chart Config
  Chart.defaults.global.defaultFontFamily = "'Lato', sans-serif";
  const lineChartConfig = {
      type: 'line',
@@ -44,7 +46,30 @@
          },
          responsive:true
      }
- }
+ };
+
+ const barChartConfig = {
+    type:"bar",
+    data:{
+        labels:['S','M','T','W','T','F','S'],
+        datasets:{
+            data:[20,30,60,90,90,60,40]
+        }
+    },
+    options:{
+        scales: {
+            xAxes: [{
+                barPercentage: 0.5,
+                barThickness: 6,
+                maxBarThickness: 8,
+                minBarLength: 2,
+                gridLines: {
+                    offsetGridLines: true
+                }
+            }]
+        }
+    }
+ };
 
  let trafficChart = new Chart(lineChart, lineChartConfig);
- let 
+ let dailyChart = new Chart(barChart,barChartConfig);

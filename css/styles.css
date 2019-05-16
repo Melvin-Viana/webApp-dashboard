@@ -258,7 +258,10 @@ main {
 
   /* Pie and Bar */
   #mobile-users,#daily-traffic{
-    border:1px solid;
+    border-top:1px solid #ccc;
+  }
+  #mobile-users{
+    border-bottom:1px solid #ccc;
   }
   .bar-and-pie{
     flex-direction: column;
