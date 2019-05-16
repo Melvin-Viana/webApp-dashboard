@@ -41,8 +41,8 @@ body {
   box-sizing: border-box;
   display: -ms-grid;
   display: grid;
-  min-height:100vh;
-  min-width: 100vw;
+  width:100vw;
+  height:100vh;
   grid-template-areas:
     "header header"
     "sidebar main";
@@ -62,7 +62,6 @@ header {
   background: #3a506b;
   grid-area: header;
   text-align: center;
-  width:100%;
 }
 
 #sidebar {
@@ -234,9 +233,8 @@ main {
 
 @media (min-width: 512px) {
   .container {
-    top: 0px;
-    grid-template-rows: 75px auto !important;
-    -ms-grid-rows:75px auto !important;
+    grid-template-rows: 75px 1fr !important;
+    -ms-grid-rows:75px 1fr !important;
   }
 
   .main-nav {
