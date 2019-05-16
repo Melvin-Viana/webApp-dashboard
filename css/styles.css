@@ -189,7 +189,6 @@ border:#ccc 1px solid;
   margin:0 .5em;
   fill:currentColor;
   transition:color ease-out .2s;
-  stroke-width: 5;
 }
 .cancel:hover{
   color:#000;
