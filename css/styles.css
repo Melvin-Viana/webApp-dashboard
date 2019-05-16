@@ -32,6 +32,7 @@ body {
   --highlight-color: #5bc0be;
   z-index: 1;
   background: #fff;
+  color:rgb(146, 146, 146);
 }
 
 /* Layout */
@@ -224,12 +225,13 @@ main {
 /* Chart styles */
 .chart-container {
   width: 95%;
+  max-width:900px;
   margin: 25px auto 0 auto;
 }
 #lineChart{
   width:100%!important;
   height:auto;
-  max-width:1200px;
+  max-width:8000px;
   margin:0 auto;
 }
 .lineChart-labels{
@@ -240,6 +242,12 @@ main {
 }
 .time-options li{
   margin-right:1.5em;
+}
+.active{
+  background:#5bc0be;
+  color:white;
+  padding:5px;
+  border-radius:25px;
 }
 /* Media Queries */
 @media (min-width: 1024px) {
