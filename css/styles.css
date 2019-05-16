@@ -218,11 +218,28 @@ main {
 }
 .bell:hover .bell-icon {
   color: var(--highlight-color);
+  color:#5bc0be;
 }
+
 /* Chart styles */
 .chart-container {
   width: 95%;
-  margin: 0 auto;
+  margin: 25px auto 0 auto;
+}
+#lineChart{
+  width:100%!important;
+  height:auto;
+  max-width:1200px;
+  margin:0 auto;
+}
+.lineChart-labels{
+  justify-content: space-between;
+}
+.time-options{
+  list-style-type:none;
+}
+.time-options li{
+  margin-right:1.5em;
 }
 /* Media Queries */
 @media (min-width: 1024px) {
