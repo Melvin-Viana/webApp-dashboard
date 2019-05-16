@@ -277,6 +277,18 @@ main {
     flex-direction: row;
     align-items:center;
   }
+  #mobile-users,#daily-traffic{
+    border:none
+  }
+  #daily-traffic{
+    border:1px solid #ccc;
+    border-left:0;
+  }
+  #mobile-users{
+    border-width:1px 0 1px 0;
+    border-style: solid;
+    border-color:#ccc;
+  }
 }
 
 @media (min-width: 512px) {
@@ -295,6 +307,4 @@ main {
   .title {
     margin: 0 !important;
   }
-  
- 
 }
