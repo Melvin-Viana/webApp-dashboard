@@ -84,8 +84,7 @@ main {
 /* Main Content */
 .main-content-wrapper {
   max-width: 1200px;
-
-  margin: 0 auto;
+  margin:0 auto;
 }
 /* Header */
 
@@ -225,39 +224,59 @@ main {
 /* Chart styles */
 .chart-container {
   width: 95%;
-  max-width:600px;
   margin: 25px auto 0 auto;
 }
 .chart-container h4{
   color:#1c2541;
-  font-size:1.2em;
 }
-#lineChart{
-  width:100%!important;
-  height:auto;
+.chart-container canvas{
+  margin:0 auto;
+}
+/* LineChart */
+  #lineChart{
+    width:100%!important;
+    height:auto;
+    max-width:600px;
+    
+  }
+  .lineChart-labels{
+    justify-content: space-between;
+    padding-bottom:30px;
+  }
+  .time-options{
+    list-style-type:none;
+  }
+  .time-options li:not(:last-child){
+    margin-right:1.5em;
+  }
+  .active{
+    background:#5bc0be;
+    color:white;
+    padding:5px;
+    border-radius:25px;
+  }
 
-}
-.lineChart-labels{
-  justify-content: space-between;
-  padding-bottom:30px;
-}
-.time-options{
-  list-style-type:none;
-}
-.time-options li:not(:last-child){
-  margin-right:1.5em;
-}
-.active{
-  background:#5bc0be;
-  color:white;
-  padding:5px;
-  border-radius:25px;
-}
+  /* Pie and Bar */
+  #mobile-users,#daily-traffic{
+    border:1px solid;
+  }
+  .bar-and-pie{
+    flex-direction: column;
+    align-items:initial;
+  }
+
 /* Media Queries */
 @media (min-width: 1024px) {
 }
 
 @media (min-width: 768px) {
+  #mobile-users,#daily-traffic{
+    width:50%;
+  }
+  .bar-and-pie{
+    flex-direction: row;
+    align-items:center;
+  }
 }
 
 @media (min-width: 512px) {
@@ -276,4 +295,6 @@ main {
   .title {
     margin: 0 !important;
   }
+  
+ 
 }
