@@ -34,7 +34,16 @@ body {
   background: #fff;
   color:rgb(146, 146, 146);
 }
-
+.heading{
+  margin-left:15px;
+  color:#000;
+}
+.pt-1half{
+  padding-top:1.5em;
+}
+.pb-3{
+  padding-bottom:3em;
+}
 /* Layout */
 
 /* GRID CSS */
@@ -262,7 +271,6 @@ main {
   /* Pie and Bar */
   #mobile-users,#daily-traffic{
     border-bottom:1px solid #ccc;
-    padding:10px 0;
   }
   #daily-traffic{
     border-left:1px solid #ccc;
@@ -273,7 +281,7 @@ main {
   }
   #barChart,#pieChart{
   }
-
+  /* Social */
 /* Media Queries */
 @media (min-width: 1024px) {
 }
@@ -295,6 +303,19 @@ main {
   #mobile-users{
     border-left:1px solid #ccc;
   }
+
+}
+/* Social */
+.social-container{
+  margin:0 auto;
+  justify-content: space-around;
+}
+div[class^="social-stats"]{
+  width:25%;
+  border:1px #ccc solid;
+  color:#1c2541;
+  padding:25px;
+  justify-content: space-between;
 }
 
 @media (min-width: 512px) {
@@ -311,6 +332,6 @@ main {
   }
 
   .title {
-    margin: 0 !important;
+    margin: 0;
   }
 }
