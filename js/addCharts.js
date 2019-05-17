@@ -1,5 +1,6 @@
 let lineChart = document.getElementById('lineChart').getContext('2d');
 let barChart = document.getElementById('barChart').getContext('2d');
+let pieChart = document.getElementById('pieChart').getContext('2d');
 
 // Line Chart Config
  Chart.defaults.global.defaultFontFamily = "'Lato', sans-serif";
@@ -48,28 +49,31 @@ let barChart = document.getElementById('barChart').getContext('2d');
      }
  };
 
- const barChartConfig = {
-    type:"bar",
-    data:{
-        labels:['S','M','T','W','T','F','S'],
-        datasets:{
-            data:[20,30,60,90,90,60,40]
-        }
+ const barChartConfig = {type: 'bar',
+ data: {
+   labels: ["S","M","T","W","T","F","S"],
+   datasets: [{
+     data: [120, 190, 50, 20, 30, 200, 240],
+     backgroundColor: "rgba(58, 80, 107)",
+     borderColor: "rgba(58, 80, 107)",
+     borderWidth: 1
+   }]
+ },
+ options: {
+   responsive: true,
+   legend: {
+    display: false
     },
-    options:{
-        scales: {
-            xAxes: [{
-                barPercentage: 0.5,
-                barThickness: 6,
-                maxBarThickness: 8,
-                minBarLength: 2,
-                gridLines: {
-                    offsetGridLines: true
-                }
-            }]
-        }
-    }
- };
+   scales: {
+     yAxes: [{
+       ticks: {
+         beginAtZero: true
+       }
+     }]
+   }
+ }
+};
 
  let trafficChart = new Chart(lineChart, lineChartConfig);
  let dailyChart = new Chart(barChart,barChartConfig);
+ let mobileChart = new Chart(pieChart,barChartConfig);
