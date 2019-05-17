@@ -292,7 +292,6 @@ main {
 #mobile-users,
 #daily-traffic {
   border-bottom: 1px solid #ccc;
-  width:100%;
 }
 #daily-traffic {
 	border-left: 1px solid #ccc;
@@ -310,14 +309,15 @@ main {
 }
 .social-container svg {
   color: #fff;
-  margin: 0 25px;
+  margin: 0 15px;
   transition:.2s ease-out;
   width:40px;
 }
 .social-container {
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   margin:0 auto;
+  width:95%;
 }
 
 div[class^='social-stats'] {
@@ -325,12 +325,12 @@ div[class^='social-stats'] {
   border: 1px #ccc solid;
   border-radius:5px;
   color: #1c2541;
-	padding: 25px 15px;
-  height:150px;
+  padding: 15px 10px;
   min-width:220px;
-  max-width:400px;
+  max-width:275px;
   margin-bottom:25px;
-  width: 25%;
+  width: 50%;
+
 }
 
 .stats-text {
@@ -371,7 +371,10 @@ div[class^='social-stats'] {
   .social-container {
 		flex-direction: row;
   }
-  
+  div[class^='social-stats'] {
+
+  width: 25%!important;
+  }
 }
 /* Social */
 
