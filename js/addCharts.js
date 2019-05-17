@@ -84,13 +84,12 @@ let pieChartConfig ={
     }],
     },
     options:{
+        responsive:true,
         legend:{
             display:true,
             position:'right',
             labels: {
                 padding:25,
-                lineWidth:15,
-                fontSize:16
                     }
         }
     }
