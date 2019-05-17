@@ -262,7 +262,7 @@ main {
   /* Pie and Bar */
   #mobile-users,#daily-traffic{
     border-bottom:1px solid #ccc;
-    padding:25px 0;
+    padding:10px 0;
   }
   #daily-traffic{
     border-left:1px solid #ccc;
@@ -272,7 +272,6 @@ main {
     align-items:initial;
   }
   #barChart,#pieChart{
-    max-height:200px;
   }
 
 /* Media Queries */
