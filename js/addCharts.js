@@ -89,7 +89,7 @@ let pieChartConfig ={
             display:true,
             position:'right',
             labels: {
-                padding:25,
+                padding:15,
                     }
         }
     }
