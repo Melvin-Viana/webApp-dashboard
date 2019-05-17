@@ -37,8 +37,11 @@ body {
 .pt-1half {
 	padding-top: 1.5em;
 }
-.pb-3 {
-	padding-bottom: 3em;
+.pb-2 {
+	padding-bottom: 2em;
+}
+.col-md-2{
+  width: 50%;
 }
 /* Layout */
 
@@ -286,6 +289,7 @@ main {
 #mobile-users,
 #daily-traffic {
   border-bottom: 1px solid #ccc;
+  width:100%;
 }
 #daily-traffic {
 	border-left: 1px solid #ccc;
@@ -296,8 +300,9 @@ main {
 }
 
 /* Social */
-
-
+#social-stats{
+  border-bottom:1px #ccc solid;
+}
 .social-container svg {
   color: #fff;
   margin: 0 15px;
@@ -317,11 +322,11 @@ div[class^='social-stats'] {
   border-radius:5px;
   color: #1c2541;
   padding: 15px 10px;
+  height:100px;
   min-width:220px;
   max-width:275px;
   margin-bottom:25px;
-  width: 50%;
-
+  flex: 0 0 auto; /*added*/
 }
 
 .stats-text {
@@ -359,7 +364,8 @@ div[class^='social-stats'] {
 	#mobile-users {
 		border-left: 1px solid #ccc;
 	}
-  .social-container {
+/* Social */
+ .social-container {
 		flex-direction: row;
   }
   div[class^='social-stats'] {
@@ -367,8 +373,6 @@ div[class^='social-stats'] {
   width: 25%!important;
   }
 }
-/* Social */
-
 @media (min-width: 512px) {
 	.container {
 		grid-template-rows: 75px 1fr !important;
