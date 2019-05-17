@@ -86,7 +86,12 @@ let pieChartConfig ={
     options:{
         legend:{
             display:true,
-            position:'bottom'
+            position:'right',
+            labels: {
+                padding:25,
+                lineWidth:15,
+                fontSize:16
+                    }
         }
     }
 }

@@ -286,17 +286,17 @@ main {
 /* Social */
 
 .social-container {
-  margin: 0 auto;
-	justify-content: space-around;
 }
 .social-container svg {
   color: #fff;
-  padding: 0 5px;
+  margin: 0 25px;
   transition:.2s ease-out;
 	width: 70px;
 }
 .social-container {
-	flex-direction: column;
+  flex-direction: column;
+  justify-content: space-around;
+  margin:0 auto;
 }
 
 div[class^='social-stats'] {
@@ -305,7 +305,6 @@ div[class^='social-stats'] {
   border-radius:5px;
 	color: #1c2541;
 	padding: 25px 15px;
-  justify-content: space-around;
   height:150px;
   max-width:400px;
   margin-bottom:25px;
