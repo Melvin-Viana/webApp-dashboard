@@ -250,11 +250,6 @@ main {
   height:auto;
  
 }
-#pieChart{
-}
-#barChart{
-  min-height:150px;
-}
 /* LineChart */
 
 #web-traffic {
