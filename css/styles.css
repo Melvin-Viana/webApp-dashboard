@@ -32,7 +32,7 @@ body {
 }
 .heading {
   color: #47505a;
-  margin-left:8.7px;
+  margin-left:16px;
 }
 .pt-1half {
 	padding-top: 1.5em;
@@ -246,7 +246,7 @@ main {
 
 /* Chart styles */
 .chart-container {
-	width: 95%;
+	width: 100%;
   margin: 25px auto 0 auto;
   color:#47505a;
 }
@@ -348,9 +348,7 @@ div[class^='social-stats'] {
   color:#47505a;
 }
 .bottom-section section{
-  margin:0 auto;
   padding: 15px 0;
-  width:95%;
 }
 .bottom-section h5{
   margin-top:6px;
@@ -361,6 +359,8 @@ div[class^='social-stats'] {
   padding:5px;
   flex-direction: column;
   border-bottom:1px solid #ccc;
+  width:95%;
+  margin:0 auto;
 }
 
 .user--info{
