@@ -355,9 +355,9 @@ div[class^='social-stats'] {
 .bottom-section h5{
   margin-top:6px;
 }
-.new-activity{
+.activity{
 }
-.new-user{
+.new-user,.activity{
   padding:5px;
   flex-direction: column;
   border-bottom:1px solid #ccc;
@@ -465,7 +465,7 @@ div[class^='social-stats'] {
     flex-direction: row;
     margin:0;
   }
-  .new-user{
+  .new-user,.activity{
     flex-direction: row;
   }
   .user--info{
