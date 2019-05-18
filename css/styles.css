@@ -476,6 +476,9 @@ div[class^='social-stats'] {
   .user--info,.user--activity{
     align-items: flex-start;
   }
+  .activity span{
+    margin-right:15px;
+  }
   .date,.left-arrow{
     margin-left:auto;
   }
