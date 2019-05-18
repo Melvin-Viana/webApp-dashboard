@@ -343,11 +343,14 @@ div[class^='social-stats'] {
 }
 
 /* Bottom-Section */
-.d-grid{
-  display:grid;
-  display:-ms-grid;
-}
 
+
+.bottom-section{
+
+}
+.new-activity{
+
+}
 /* Media Queries */
 @media (min-width: 1024px) {
   
@@ -379,6 +382,14 @@ div[class^='social-stats'] {
   }
   .two-sections{
     flex-direction: row;
+  }
+  .d-grid{
+    display:grid;
+    display:-ms-grid;
+  }
+  .bottom-section{
+    -ms-grid-columns: 1fr 1fr ;
+  grid-template-columns:  repeat( 2, 1fr );
   }
 }
 @media (min-width: 512px) {
