@@ -277,6 +277,7 @@ main {
   margin-top:25px;
   margin-left:16px;
   font-size:.8em;
+  flex-wrap:wrap;
 }
 .time-options li{
   cursor:pointer
@@ -324,9 +325,9 @@ div[class^='social-stats'] {
   color: #1c2541;
   padding: 15px 10px;
   height:100px;
-  min-width:220px;
-  max-width:275px;
+  max-width:250px;
   margin-bottom:25px;
+  width:100%;
 
 }
 
@@ -363,7 +364,6 @@ div[class^='social-stats'] {
   border-bottom:1px solid #ccc;
   width:90%;
   margin:0 auto;
-  height:100px;
 }
 
 .user--info,.user--activity{
