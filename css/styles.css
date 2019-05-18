@@ -325,7 +325,8 @@ div[class^='social-stats'] {
   color: #1c2541;
   padding: 15px 10px;
   height:100px;
-  max-width:250px;
+  min-width:220px;
+  max-width:275px;
   margin-bottom:25px;
   width:100%;
 
@@ -356,14 +357,20 @@ div[class^='social-stats'] {
 .bottom-section h5{
   margin-top:6px;
 }
-.activity{
+.new-users,.new-activity{
+  border-left:0;
+  border-bottom:1px solid #ccc;
 }
 .new-user,.activity{
   padding:5px;
   flex-direction: column;
   border-bottom:1px solid #ccc;
   width:90%;
+  height:100px;
   margin:0 auto;
+}
+.new-user:last-child,.activity:last-child{
+  border:0;
 }
 
 .user--info,.user--activity{
@@ -426,6 +433,7 @@ div[class^='social-stats'] {
   .new-users{
     -ms-grid-row: 1;
     -ms-grid-column: 1;
+    border-right:1px solid #ccc;
   }
   .new-activity{
     -ms-grid-row: 1;
