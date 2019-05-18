@@ -389,7 +389,23 @@ div[class^='social-stats'] {
   }
   .bottom-section{
     -ms-grid-columns: 1fr 1fr ;
-  grid-template-columns:  repeat( 2, 1fr );
+    grid-template-columns:  repeat( 2, 1fr );
+  }
+  .new-users{
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .new-activity{
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .user-form{
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .user-settings{
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
   }
 }
 @media (min-width: 512px) {
