@@ -31,8 +31,8 @@ body {
 	color: rgb(146, 146, 146);
 }
 .heading {
-	margin-left: 15px;
-	color: #000;
+  color: #47505a;
+  margin-left:8.7px;
 }
 .pt-1half {
 	padding-top: 1.5em;
@@ -130,7 +130,7 @@ main {
 	border-radius: 50%;
 	height: auto;
 	margin-right: 10px;
-	width: 30px;
+	width: 40px;
 }
 
 .user--name {
@@ -247,11 +247,10 @@ main {
 /* Chart styles */
 .chart-container {
 	width: 95%;
-	margin: 25px auto 0 auto;
+  margin: 25px auto 0 auto;
+  color:#47505a;
 }
-.chart-container h4 {
-	color: #1c2541;
-}
+
 .chart-container canvas {
 	margin: 0 auto;
   margin-top: 30px;
@@ -346,9 +345,34 @@ div[class^='social-stats'] {
 
 
 .bottom-section{
-
+  color:#47505a;
+}
+.bottom-section section{
+  margin:0 auto;
+  padding: 15px 0;
+  width:95%;
+}
+.bottom-section h5{
+  margin-top:6px;
 }
 .new-activity{
+}
+.new-user{
+  padding:5px;
+  flex-direction: column;
+  border-bottom:1px solid #ccc;
+}
+
+.user--info{
+  flex-direction: column;
+  padding:10px 0;
+}
+.user--info a{
+  padding-top:5px;
+}
+.user-form{
+
+}.user-settings{
 
 }
 /* Media Queries */
@@ -375,6 +399,7 @@ div[class^='social-stats'] {
 	}
 /* Social */
  .social-container {
+   color:#1c2541;
 		flex-direction: row;
   }
   div[class^='social-stats'] {
@@ -432,5 +457,14 @@ div[class^='social-stats'] {
 @media (min-width: 400px){
   .time-options{
     margin-top:0;
+  }
+  .new-user{
+    flex-direction: row;
+  }
+  .user--info{
+    align-items: flex-start;
+  }
+  .date{
+    margin-left:auto;
   }
 }
