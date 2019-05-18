@@ -200,7 +200,13 @@ main {
 	width: 50%;
 	border: #ccc 1px solid;
 }
-
+/* Remove x button */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}
 ::placeholder {
 	color: #ccc;
 	font-size: 11px;
@@ -347,7 +353,6 @@ div[class^='social-stats'] {
 
 /* Bottom-Section */
 
-
 .bottom-section{
   color:#47505a;
 }
@@ -357,6 +362,7 @@ div[class^='social-stats'] {
 .bottom-section h5{
   margin-top:6px;
 }
+/* New User/Activity */
 .new-users,.new-activity{
   border-left:0;
   border-bottom:1px solid #ccc;
@@ -384,6 +390,14 @@ div[class^='social-stats'] {
   font-size:2em;
   display:none;
 }
+.activity,.new-user{
+  cursor: pointer;
+  transition:ease-out background .3s;
+}
+.new-user:hover,.activity:hover{
+background:#eee;
+}
+
 .user-form{
 
 }.user-settings{
@@ -429,6 +443,7 @@ div[class^='social-stats'] {
   .bottom-section{
     -ms-grid-columns: 1fr 1fr ;
     grid-template-columns:  repeat( 2, 1fr );
+    grid-template-rows:1fr 300px;
   }
   .new-users{
     -ms-grid-row: 1;
