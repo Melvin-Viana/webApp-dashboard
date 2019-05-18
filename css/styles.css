@@ -50,6 +50,9 @@ body {
 .two-sections section:last-child{
 	border-left: 1px solid #ccc;
 }
+input{
+  text-indent:10px;
+}
 /* Layout */
 
 /* GRID CSS */
@@ -210,7 +213,6 @@ input[type="search"]::-webkit-search-results-decoration {
 ::placeholder {
 	color: #ccc;
 	font-size: 11px;
-	padding-left: 10px;
 }
 /* Demo Alert CSS */
 
@@ -398,7 +400,10 @@ div[class^='social-stats'] {
 background:#eee;
 }
 
-.user-form{
+.user-form form{
+  flex-direction: column;
+  align-items:flex-start;
+  padding:25px;
 
 }.user-settings{
 
