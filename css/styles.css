@@ -65,7 +65,6 @@ body {
 	-ms-grid-columns: 70px 1fr;
 	grid-template-rows: 150px 1fr;
   -ms-grid-rows: 150px 1fr;
-  overflow:none;
 }
 header {
 	-ms-grid-row: 1;
@@ -316,6 +315,7 @@ main {
   width:95%;
 }
 
+/* New Users and */
 div[class^='social-stats'] {
   background:rgb(241, 240, 240);
   border: 1px #ccc solid;
@@ -326,7 +326,7 @@ div[class^='social-stats'] {
   min-width:220px;
   max-width:275px;
   margin-bottom:25px;
-  flex: 0 0 auto; /*added*/
+
 }
 
 .stats-text {
@@ -341,6 +341,13 @@ div[class^='social-stats'] {
 .stats-text span{
   font-size:2em;
 }
+
+/* Bottom-Section */
+.d-grid{
+  display:grid;
+  display:-ms-grid;
+}
+
 /* Media Queries */
 @media (min-width: 1024px) {
   
