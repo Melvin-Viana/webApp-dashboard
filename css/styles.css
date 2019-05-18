@@ -363,14 +363,19 @@ div[class^='social-stats'] {
   border-bottom:1px solid #ccc;
   width:90%;
   margin:0 auto;
+  height:100px;
 }
 
-.user--info{
+.user--info,.user--activity{
   flex-direction: column;
   padding:10px 0;
 }
-.user--info a{
+.user--info a,.user--activity em{
   padding-top:5px;
+}
+.left-arrow{
+  font-size:2em;
+  display:none;
 }
 .user-form{
 
@@ -468,10 +473,16 @@ div[class^='social-stats'] {
   .new-user,.activity{
     flex-direction: row;
   }
-  .user--info{
+  .user--info,.user--activity{
     align-items: flex-start;
   }
-  .date{
+  .date,.left-arrow{
     margin-left:auto;
+  }
+  .left-arrow{
+    display:block;
+  }
+  .user--activity{
+    font-size:.9em;
   }
 }
