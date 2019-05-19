@@ -55,7 +55,8 @@ body {
 .two-sections section:last-child {
 	border-left: 1px solid #ccc;
 }
-input {
+input,textarea,select {
+	font-family: "Lato";
 	text-indent: 10px;
 }
 /* Layout */
@@ -424,7 +425,7 @@ div[class^='social-stats'] {
 	align-items: flex-start;
 	padding: 25px;
 }
-.form input {
+.form input,textarea {
 	width: 100%;
 }
 .message-recipient {
@@ -439,6 +440,7 @@ div[class^='social-stats'] {
 	background: #3a506b;
 	border: none;
 	border-radius: 5px;
+	font-family: "Lato",sans-serif;
 	height: 50px;
 	text-transform: uppercase;
 
@@ -460,6 +462,7 @@ div[class^='social-stats'] {
 	margin-top:1em;
 }
 .timezone-setting{
+	background:#fff;
 	height:30px;
 	width:100%;
 	margin-top:auto;
@@ -472,16 +475,20 @@ justify-content: space-between;
 }
 .btn-save{
 	background: #3a506b;
+	color:#fff;
 }
 
 .btn-save,.btn-cancel{
 	border: none;
 	border-radius: 5px;
-	color:#fff;
+	font-family: "Lato",sans-serif;
 	margin:8px 0;
 	height: 50px;
 	text-transform: uppercase;
 	width:100%
+}
+.btn-cancel{
+	color:#47505a;
 }
 /* Media Queries */
 @media (min-width: 1024px) {
