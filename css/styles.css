@@ -12,6 +12,9 @@ html {
 	margin: 0;
 	padding: 0;
 }
+body{
+	min-width:300px;        /* Suppose you want minimum width of 1000px */
+}
 
 /* General CSS */
 .icon {
@@ -135,6 +138,7 @@ main {
 	height: auto;
 	margin-right: 10px;
 	width: 40px;
+	min-width:40px
 }
 
 .user--name {
@@ -375,9 +379,9 @@ div[class^='social-stats'] {
 	flex-direction: column;
 	border-bottom: 1px solid #ccc;
 	width: 90%;
-	min-height: 100px;
 	margin: 0 auto;
 }
+
 .new-user:last-child,
 .activity:last-child {
 	border: 0;
@@ -392,9 +396,18 @@ div[class^='social-stats'] {
 .user--activity em {
 	padding-top: 5px;
 }
+.user--activity em{
+	text-decoration: underline;
+}
 .left-arrow {
 	font-size: 2em;
 	display: none;
+}
+.user--activity {
+	flex-wrap:wrap;
+}
+.user--activity span{
+	width:200px;
 }
 .activity,
 .new-user {
@@ -569,6 +582,8 @@ justify-content: space-between;
 	}
 	.activity span {
 		margin-right: 15px;
+	}
+	.user--activity span{
 	}
 	.date,
 	.left-arrow {
