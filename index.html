@@ -8,6 +8,7 @@
 		<link href="css/normalize.css" type="text/css" rel="stylesheet" />
 		<link href="css/toggleswitch.css" type="text/css" rel="stylesheet" />
 		<link href="css/styles.css" type="text/css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/loader.css"/>
 		<title>WebApp Dashboard</title>
 	</head>
 	<body>
@@ -137,7 +138,7 @@
 				<div class="main-content-wrapper">
 					<div class="alert d-flex">
 						<p><b>Alert: </b> Lorem ipsum dolor sit amet, eos eius euismod dissentiet eu.</p>
-						<div class="cancel">
+						<div class="close">
 							<svg
 								width="10"
 								version="1.1"
@@ -298,12 +299,12 @@
                     <span class="left-arrow">></span>
                 </div>
               </section>
-              <section class="user-form" ><h4 class="heading">Message User</h4>
-							<form >
+              <section id="user-form" ><h4 class="heading">Message User</h4>
+							<form class="user-form" >
 								<div class="d-flex form" >
                 <input id="recepient" type="search" class="message-recipient" placeholder="Search for User"/>
                 <textarea placeholder="Message for User" class="message"></textarea>
-                <input type="submit" class="message-submit"/>
+                <button  class="message-submit">Submit</button>
 
 							</div>
 						</form>
