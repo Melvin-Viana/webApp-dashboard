@@ -7,7 +7,7 @@ const submit = $('.message-submit');
 const recepientInput = $('#recepient');
 const messsagesInput = $('.message');
 const userForm = $('.user-form');
-
+const submitContainer = $('.submit-container')
 // Close alert 
 close.addEventListener('click', ()=>{
     $('.alert').style.display="none";
@@ -30,28 +30,30 @@ if(recepientInput.value===""||messsagesInput.value===""){
 alert('Please enter recipient and/or message content before sending your message! ');
 }
 else{
-// Display message was sent
+// Display loading 
 let loader = document.createElement('div');
 loader.classList.add('loader');
-userForm.prepend(loader);
-userForm.lastElementChild.style.display="none"
+submitContainer.prepend(loader);
+// Hide button
+submit.style.display="none";
+// Display message and button after 3s
 setTimeout(()=>{
-    userForm.lastElementChild.style="";
-    userForm.firstElementChild.remove();
+    //Remove loader
+    submitContainer.firstElementChild.remove();
+    // Display to user message has been submitted
     let newSpan = document.createElement('span');
     newSpan.innerHTML="Message Submitted!"
     newSpan.classList+="submit-sucess";
     newSpan.style.color="#5bc0be";
     userForm.firstElementChild.prepend(newSpan);
+    submit.style.display="";
+
 }
 ,3000);
 
 //=========================================================================
-
-
 }
 });
-//TODO: Uses JS to display error messages if both or either the user or message field is empty.
 
 //TODO: Displays working autocomplete search input field that lets the user search for members.
 
@@ -63,5 +65,36 @@ Traffic chart widget:
 Hourly, Daily, Weekly and Monthly buttons display a different line chart on click.
  */
 
- //T
+// TODO: Local storage is used to save the settings. When page is reloaded the settings are remembered.
+
+// Checks if browser supports localStorage
+const supportsLocalStorage =()=> {
+    try{
+     return 'localStorage' in window && window['localStorage'] !== null
+    } catch(e){
+      return false;
+    }
+   }
+
+   if(supportsLocalStorage()){
+    let checkboxes = document.querySelectorAll('.onoffswitch input');
+    checkboxes.forEach(e=>{
+        if(localStorage.getItem(`${e.id}`)==="true"){
+            e.setAttribute('checked', true);
+        }else if(localStorage.getItem(`${e.id}`)==="false"&&localStorage.getItem(`${e.id}`)!==null){
+            e.removeAttribute('checked');
+        }
+        e.addEventListener('click',()=>{
+            if(e.hasAttribute('checked')){
+                e.removeAttribute('checked')
+            }else{
+                e.setAttribute('checked', true)
+            }
+            localStorage.setItem(e.id, e.hasAttribute('checked'));
+        });
+    })
+   }
+
 });
+
+

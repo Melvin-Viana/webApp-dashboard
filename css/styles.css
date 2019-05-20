@@ -438,6 +438,10 @@ div[class^='social-stats'] {
 .message {
 	height: 150px;
 }
+.submit-container{
+	margin-top:auto;
+	width:100%;
+}
 .message-submit {
 	margin-top: auto;
 	color: #fff;
@@ -447,7 +451,6 @@ div[class^='social-stats'] {
 	font-family: "Lato",sans-serif;
 	height: 50px;
 	text-transform: uppercase;
-
 }
 
 .switch-settings {
