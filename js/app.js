@@ -80,7 +80,9 @@ const supportsLocalStorage =()=> {
    }
 
    if(supportsLocalStorage()){
-    let checkboxes = document.querySelectorAll('.onoffswitch input');
+    const checkboxes = document.querySelectorAll('.onoffswitch input');
+    const selectTimezone = $('.timezone-setting');
+    // Checkboxes settings saved
     checkboxes.forEach(e=>{
         if(localStorage.getItem(`${e.id}`)==="true"){
             e.setAttribute('checked', true);
@@ -95,6 +97,15 @@ const supportsLocalStorage =()=> {
             }
             localStorage.setItem(e.id, e.hasAttribute('checked'));
         });
+
+        // When user clicks an option or arrows down and presses enter, save setting
+        // Timezone-setting saved
+        selectTimezone.addEventListener('change',()=>{
+            localStorage.setItem('timezone',selectTimezone.selectedIndex);
+        });
+        if(localStorage.getItem('timezone')!==null){
+            selectTimezone.selectedIndex = localStorage.getItem('timezone');
+        }
     })
    }
 
