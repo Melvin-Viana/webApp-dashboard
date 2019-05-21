@@ -233,10 +233,19 @@
 									width="40"
 									xmlns="http://www.w3.org/2000/svg"
 									viewBox="5 0 32 32"
-                >
+								>
+								<defs>
+										<linearGradient id="myLinearGradient1"
+																		x1="0%" y1="0%"
+																		x2="0%" y2="100%"
+																		spreadMethod="pad">
+											<stop offset="0%"   stop-color="#00cc00" stop-opacity="1"/>
+											<stop offset="100%" stop-color="#006600" stop-opacity="1"/>
+										</linearGradient>
+									</defs>
                 <circle cx="15" cy="15" r="26"  fill="#3a506b" />
 									<use
-                   xlink:href="#icon-google-plus" />
+                   xlink:href="#icon-google-plus" style="fill:"/>
 								</svg>
                 <div class="stats-text d-flex">
                   <h3>Google Plus</h3>
@@ -388,6 +397,7 @@
 			</main>
 		</div>
 		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+		<script src="js/polyfill.min.js"></script>
 		<script src="js/autocomplete.js"></script>
 		<script src="js/addCharts.js"></script>
 		<script src="js/app.js"></script>

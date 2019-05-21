@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const recepientInput = $('#recepient');
     const messsagesInput = $('.message');
     const userForm = $('.user-form');
-    const submitContainer = $('.submit-container')
+    const submitContainer = $('.submit-container');
+    const sideBar = $('#sidebar');
     // Close alert
     close.addEventListener('click', () => {
         $('.alert').style.display = "none";
@@ -84,6 +85,8 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             if (localStorage.getItem('timezone') !== null) {
                 selectTimezone.selectedIndex = localStorage.getItem('timezone');
+            }else if(localStorage.getItem('timezone') === null){
+                selectTimezone.selectedIndex=0;
             }
         })
     }
@@ -100,4 +103,22 @@ document.addEventListener('DOMContentLoaded', () => {
             popup.classList.remove('show');
         }
     });
+    if(window.innerWidth>512){
+    if(window.pageYOffset<149){sideBar.style.position="static"}
+    if(window.pageYOffset>149){sideBar.style.position="fixed"}
+    }else{
+        if(window.pageYOffset<75){sideBar.style.position="static"}
+        if(window.pageYOffset>75){sideBar.style.position="fixed"}
+
+    }
+    window.onscroll=function(){
+        if(window.innerWidth<512){
+            if(window.pageYOffset<149){sideBar.style.position="static"}
+            if(window.pageYOffset>149){sideBar.style.position="fixed"}
+            } 
+        if(window.innerWidth>=512){
+                if(window.pageYOffset<75){sideBar.style.position="static"}
+                if(window.pageYOffset>75){sideBar.style.position="fixed"}
+            }  
+    }
 });

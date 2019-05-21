@@ -95,6 +95,7 @@ header {
 	grid-column: 1;
 	grid-area: sidebar;
 	min-height: 100vh;
+	transition:all ease-out 0.5s;
 }
 
 main {
