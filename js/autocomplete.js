@@ -55,7 +55,9 @@ function autocomplete(inp, arr) {
         if (currentFocus >= x.length) currentFocus = 0;
         if (currentFocus < 0) currentFocus = (x.length - 1);
         x[currentFocus].classList.add("autocomplete-active");
-        document.querySelector('.message-recipient').value=x[currentFocus].textContent}
+        document.querySelector('.message-recipient').value = x[currentFocus].textContent
+    }
+
     function removeActive(x) {
         for (var i = 0; i < x.length; i++) {
             x[i].classList.remove("autocomplete-active");
@@ -69,6 +71,7 @@ function autocomplete(inp, arr) {
                 x[i].parentNode.removeChild(x[i]);
             }
         }
+        document.querySelector('.popup')
     }
     document.querySelector('body').addEventListener("click", function (e) {
         closeAllLists(e.target);

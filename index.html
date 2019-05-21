@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<link href="https://fonts.googleapis.com/css?family=Poiret+One|Righteous|Lato" rel="stylesheet" />
+		<link href="css/popup.css" rel="stylesheet"/>
 		<link href="css/autocomplete.css" rel="stylesheet"/>
 		<link href="css/normalize.css" type="text/css" rel="stylesheet" />
 		<link href="css/toggleswitch.css" type="text/css" rel="stylesheet" />
@@ -90,7 +91,8 @@
 				<nav class="main-nav">
 					<h1 class="title">webApp&trade;</h1>
 					<div class="user-links">
-						<svg class="icon bell" xmlns="http://www.w3.org/2000/svg" width="100" viewBox="0 0 32 32">
+						<div class="popup">
+						<svg class="icon bell" xmlns="http://www.w3.org/2000/svg" width="100" viewBox="0 0 30 30">
 							<circle
 								class="new-notification"
 								cx="32"
@@ -100,8 +102,13 @@
 								fill="#6FFFE9"
 								stroke-width="1"
 							/>
-							<use class="bell-icon" xlink:href="#icon-bell" />
+							<use class="bell-icon"   xlink:href="#icon-bell" />
 						</svg>
+						<ul class="popuptext" id="myPopup">
+							<li class="d-flex"><img class="user--image" src="images/member-1.jpg" alt="member-avatar">
+							New Message from Allison</li>
+						<li class="d-flex"><img class="user--image" src="images/member-3.jpg" alt="member-avatar">Leeta Silver wants to add you as a friend.</li></ul>
+						</div>
 						<img class="user--image" src="images/member-5.jpg" />
 						<span class="user--name">Kim Dahyun</span>
 					</div>
