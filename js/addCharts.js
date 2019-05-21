@@ -1,8 +1,8 @@
 let lineChart = document.getElementById('lineChart').getContext('2d');
 let barChart = document.getElementById('barChart').getContext('2d');
 let pieChart = document.getElementById('pieChart').getContext('2d');
-// Line Chart Config
 Chart.defaults.global.defaultFontFamily = "'Lato', sans-serif";
+
 const lineChartConfig = {
     type: 'line',
     data: {

@@ -1,5 +1,6 @@
 // My own jQuery Selector
 const $ = (query) => document.querySelector(query);
+// DOMContent load
 document.addEventListener('DOMContentLoaded', () => {
     const close = $('.close');
     const submit = $('.message-submit');

@@ -71,7 +71,6 @@ function autocomplete(inp, arr) {
                 x[i].parentNode.removeChild(x[i]);
             }
         }
-        document.querySelector('.popup')
     }
     document.querySelector('body').addEventListener("click", function (e) {
         closeAllLists(e.target);
