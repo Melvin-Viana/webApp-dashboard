@@ -164,7 +164,7 @@
 								<ul class="d-flex time-options  ">
 									<li>Hourly</li>
 									<li>Daily</li>
-									<li class="active">Weekly</li>
+									<li class="active-option">Weekly</li>
 									<li>Monthly</li>
 								</ul>
 							</div>
@@ -302,7 +302,11 @@
               <section id="user-form" ><h4 class="heading">Message User</h4>
 							<form class="user-form" >
 								<div class="d-flex form" >
-                <input id="recepient" type="search" class="message-recipient" placeholder="Search for User"/>
+								<div class="autocomplete">
+										<input id="recepient" type="search" class="message-recipient" placeholder="Search for User"/>
+									<span class="close"></span>
+									<div class="dialog"></div>
+								</div>
                 <textarea placeholder="Message for User" class="message"></textarea>
                 <div class="submit-container"><button  class="message-submit">Submit</button></divcl>
 

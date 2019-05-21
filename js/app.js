@@ -18,7 +18,8 @@ const preventDef = (query)=>$(query).addEventListener('click',e=>e.preventDefaul
 // Save and cancel button dont do anything
 preventDef('.btn-save');
 preventDef('.btn-cancel');
-//MESSAGE SENT FUNC
+//=========================================================================
+//* MESSAGE SENT FUNC
 submit.addEventListener('click', 
 function(event){
     event.preventDefault();
@@ -26,46 +27,48 @@ function(event){
         $('.submit-sucess').remove()
     }
     //Uses JS to display error messages if both or either the user or message field is empty.
-if(recepientInput.value===""||messsagesInput.value===""){
-alert('Please enter recipient and/or message content before sending your message! ');
-}
-else{
-// Display loading 
-let loader = document.createElement('div');
-loader.classList.add('loader');
-submitContainer.prepend(loader);
-// Hide button
-submit.style.display="none";
-// Display message and button after 3s
-setTimeout(()=>{
-    //Remove loader
-    submitContainer.firstElementChild.remove();
-    // Display to user message has been submitted
-    let newSpan = document.createElement('span');
-    newSpan.innerHTML="Message Submitted!"
-    newSpan.classList+="submit-sucess";
-    newSpan.style.color="#5bc0be";
-    userForm.firstElementChild.prepend(newSpan);
-    submit.style.display="";
+        if(recepientInput.value===""||messsagesInput.value===""){
+        alert('Please enter recipient and/or message content before sending your message! ');
+        }
+        else{
+            // Display loading 
+            let loader = document.createElement('div');
+            loader.classList.add('loader');
+            submitContainer.prepend(loader);
+            // Hide button
+            submit.style.display="none";
+            // Display message and button after 3s
+            setTimeout(()=>{
+                //Remove loader
+                submitContainer.firstElementChild.remove();
+                // Display to user message has been submitted
+                let newSpan = document.createElement('span');
+                newSpan.innerHTML="Message Submitted!"
+                newSpan.classList+="submit-sucess";
+                newSpan.style.color="#5bc0be";
+                userForm.firstElementChild.prepend(newSpan);
+                submit.style.display="";
 
-}
-,3000);
-
-//=========================================================================
-}
+            },3000);
+            }
 });
 
+//=========================================================================
 //TODO: Displays working autocomplete search input field that lets the user search for members.
 
+// Implement with static data.
+const arrNames = ['Alex',"Bob","Cathy","Doug","Ernie","Frank","Greg","Harry","Ike","Jack","Kathy","Lee","Moe","Ned","Oliver","Pat","Quinn","Rob","Sam","Ted","Urkel","Ven","Will","Xavier","Yasmin","Zion"]
+
+// Keypress event for textbox
+    // When user types display first 5 names that are relevant
+        // Display first 5 relevant text in textbox
+
+// ========================================================================
 //TODO:  Displays at least two notifications at the same time when the user clicks the alerts icon (this could be a pop-up window or dropdown menu).
 
-/* TODO: Traffic chart widget:
-Includes navigation allowing user to switch between viewing an Hourly, Daily, and Weekly chart.
-Traffic chart widget:
-Hourly, Daily, Weekly and Monthly buttons display a different line chart on click.
- */
 
-// TODO: Local storage is used to save the settings. When page is reloaded the settings are remembered.
+
+// * Local storage is used to save the settings. When page is reloaded the settings are remembered.
 
 // Checks if browser supports localStorage
 const supportsLocalStorage =()=> {

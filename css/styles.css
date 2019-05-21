@@ -303,7 +303,7 @@ input[type='search']::-webkit-search-results-decoration {
 	margin-right: 1.5em;
 }
 
-.active {
+.active-option {
 	background: #5bc0be;
 	color: white;
 	padding: 5px;
@@ -432,8 +432,8 @@ div[class^='social-stats'] {
 .form input,textarea,.message-submit {
 	width: 100%;
 }
-.message-recipient {
-	margin-bottom: 0.5em;
+.autocomplete{
+	width:100%;
 }
 .message {
 	height: 150px;
