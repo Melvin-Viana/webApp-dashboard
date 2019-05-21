@@ -53,15 +53,6 @@ function(event){
             }
 });
 
-//=========================================================================
-//TODO: Displays working autocomplete search input field that lets the user search for members.
-
-// Implement with static data.
-const arrNames = ['Alex',"Bob","Cathy","Doug","Ernie","Frank","Greg","Harry","Ike","Jack","Kathy","Lee","Moe","Ned","Oliver","Pat","Quinn","Rob","Sam","Ted","Urkel","Ven","Will","Xavier","Yasmin","Zion"]
-
-// Keypress event for textbox
-    // When user types display first 5 names that are relevant
-        // Display first 5 relevant text in textbox
 
 // ========================================================================
 //TODO:  Displays at least two notifications at the same time when the user clicks the alerts icon (this could be a pop-up window or dropdown menu).

@@ -434,6 +434,7 @@ div[class^='social-stats'] {
 }
 .autocomplete{
 	width:100%;
+	margin-bottom: auto;
 }
 .message {
 	height: 150px;
