@@ -303,7 +303,7 @@ input[type='search']::-webkit-search-results-decoration {
 	transition:ease-out .3s color;
 }
 .time-options li:hover{
-	color:#5bc0be;
+	color:#1c2541;
 }
 .time-options li:not(:last-child) {
 	margin-right: 1.5em;
